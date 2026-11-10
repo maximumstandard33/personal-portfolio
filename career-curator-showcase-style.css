@@ -1,0 +1,155 @@
+
+/* GENERAL PAGE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+/* ALL CONTENT SECTIONS */
+main section {
+    background-color: white;
+    width: 85%;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* SECTION HEADINGS */
+main section h2 {
+    font-size: 26px;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 10px;
+}
+
+/* PARAGRAPHS */
+main section p {
+    font-size: 16px;
+    color: #475569;
+}
+
+/* FEATURE AND TECHNOLOGY LISTS */
+main section ul {
+    padding-left: 25px;
+}
+
+main section li {
+    margin-bottom: 10px;
+    color: #475569;
+}
+
+/* PROJECT SCREENSHOT */
+.screenshot-container {
+    text-align: center;
+}
+
+.screenshot-container img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+#dashboard-screenshot{
+    border-bottom: black solid 3px;
+    margin-bottom: 10px;
+}
+
+#study-tracker-screenshot{
+    border-bottom:black solid 3px;
+    margin-bottom: 10px;
+}
+
+/* PROJECT LINKS */
+#project-links a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 12px;
+    transition: 0.3s ease;
+}
+
+#project-links a:hover {
+    background-color: #152c6e;
+    transform: translateY(-3px);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 5px solid rgb(250, 219, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.3s ease;
+    visibility: hidden;
+}
+
+#back-to-top:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#back-to-top.show {
+    visibility: visible;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #4179eb;
+    font-size: 120%;
+}
+
+
+
