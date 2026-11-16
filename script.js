@@ -40,3 +40,50 @@ contactForm.addEventListener("submit", async function(event) {
         formStatus.textContent = "Unable to send message. Please try again.";
     }
 });
+
+
+
+/* =========================================
+   DAY 12 — SCROLL REVEAL
+========================================= */
+
+const revealElements = document.querySelectorAll(
+    ".about-text, .about-image, .project-feature, .skill-item, .contact-container"
+);
+
+if ("IntersectionObserver" in window) {
+
+    const revealObserver = new IntersectionObserver(
+        function(entries, observer) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+    revealElements.forEach(function(element, index) {
+
+        element.classList.add("reveal-item");
+        element.style.transitionDelay = (index % 4) * 100 + "ms";
+
+        revealObserver.observe(element);
+
+    });
+
+} else {
+
+    revealElements.forEach(function(element) {
+        element.classList.add("is-visible");
+    });
+
+}
